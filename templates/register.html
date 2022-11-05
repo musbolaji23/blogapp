@@ -1,0 +1,44 @@
+{% extends 'index.html' %}
+
+{% block content %}
+
+<form action="/signup_user" method='POST']>
+
+    <div>
+        <label for="firstname">Firstname</label>
+        <input type="text" name="firstname" id="firstname">
+    </div><br>
+
+    <div>
+        <label for="lastname">Lastname</label>
+        <input type="text" name="lastname" id="lastname">
+    </div><br>
+
+    <div>
+        <label for="Email">Email</label>
+        <input type="email" name="email" id="email">
+    </div><br>
+
+    <div>
+        <label for="Password">Password</label>
+        <input type="password" name="password" id="password">
+    </div><br>
+
+    <div>
+        <label for="confirm">Confirm Password</label>
+        <input type="password" name="confirm" id="password">
+    </div><br>
+
+    <div>
+        <input type="submit" value="Signup" class="mybtn">
+    </div>
+
+    <div>
+        <small>
+            Already have an account, <a href="{{ url_for('login') }}">Login</a>
+        </small>
+    </div>
+
+</form>
+
+{% endblock %}

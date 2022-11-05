@@ -1,0 +1,27 @@
+{% extends 'index.html' %}
+
+{% block content %}
+<form action="/processpost" method="POST">
+
+    <div>
+        <center><h1>What is on your mind?</h1></center>
+    </div>
+<div>
+    <label for="title">Title:</label>
+    <input type="text" name="title" placeholder="enter your title">
+</div><br>
+
+<div>
+    <label for="content">Blog content</label><br>
+    <br>
+    <textarea name="content" id="" cols="30" rows="10" placeholder="enter your content">content</textarea>
+</div><br>
+
+<div>
+    <button type="submit">post</button>
+</div>
+
+
+
+</form>
+{% endblock %}
